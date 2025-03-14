@@ -134,7 +134,7 @@
       <pre><code class="language-c">
 #include &lt;stdio.h&gt;
 int main() {
-    char cipher[] = "XQMCRNL";
+    char cipher[] = "XQCMRNL";
     int indices[] = {3, 2, 1, 4, 0, 6, 5};
     putchar(cipher[indices[1]]); 
     return 0;
@@ -146,7 +146,7 @@ int main() {
       <h3>Snippet 2</h3>
       <pre><code class="language-python">
 def extract():
-    scrambled = "VBPJDEL"
+    scrambled = "JBPVDEL"
     indices = [3, 2, 1, 0, 4, 6, 5]
     print(scrambled[indices[-7]])  
 extract()
@@ -215,7 +215,7 @@ int main() {
     <pre><code class="language-c">
   #include <stdio.h>
   int main() {
-  char puzzle[] = "EBSQGJ Y";
+  char puzzle[] = "EBSQGJY ";
   for (int i = 0; puzzle[i] != '\0'; i++) {
     if ((i & 7) == 6) {  // Bitwise AND trick
         putchar(puzzle[i]); 
