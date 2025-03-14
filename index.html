@@ -134,7 +134,7 @@
       <pre><code class="language-c">
 #include &lt;stdio.h&gt;
 int main() {
-    char cipher[] = "YOTCRIV";
+    char cipher[] = "XQMCRNL";
     int indices[] = {3, 2, 1, 4, 0, 6, 5};
     putchar(cipher[indices[1]]); 
     return 0;
@@ -146,7 +146,7 @@ int main() {
       <h3>Snippet 2</h3>
       <pre><code class="language-python">
 def extract():
-    scrambled = "VCTYORI"
+    scrambled = "VBPJDEL"
     indices = [3, 2, 1, 0, 4, 6, 5]
     print(scrambled[indices[-7]])  
 extract()
@@ -165,7 +165,7 @@ void extract(char *arr, int index) {
     extract(arr, index - 2);
 }
 int main() {
-    char encoded[] = "TROIVCY";
+    char encoded[] = "TBRZQNJ";
     extract(encoded, 6);
     return 0;
 }
@@ -176,7 +176,7 @@ int main() {
         <h3>Snippet 4</h3>
         <pre><code class="language-python">
   def extract():
-      jumbled = {6: 'C', 5: 'I', 4: 'O', 3: 'T', 2: 'R', 1: 'V', 0: 'Y'}
+      jumbled = {6: 'J', 5: 'I', 4: 'E', 3: 'M', 2: 'Z', 1: 'X', 0: 'U'}
       print(jumbled[len(jumbled) - 2]) 
   extract()
    </code></pre>
@@ -187,7 +187,7 @@ int main() {
     <pre><code class="language-c">
   #include <stdio.h>
   int main() {
-  char sequence[] = "RCTOIVY";
+  char sequence[] = "XVQONAM";
   int jump = 2;
   for (int i = 0; sequence[i] != '\0'; i++) {
     if (i + jump == 5) {
@@ -203,7 +203,7 @@ int main() {
     <h3>Snippet 6 </h3>
     <pre><code class="language-python">
   def extract():
-  letters = list("CIVROTY")
+  letters = list("WEGROTY")
   indices = [5, 4, 3, 2, 1, 0, 6]
   print(letters[indices[2]])  
   extract()
@@ -215,7 +215,7 @@ int main() {
     <pre><code class="language-c">
   #include <stdio.h>
   int main() {
-  char puzzle[] = "IVTOCR Y";
+  char puzzle[] = "EBSQGJ Y";
   for (int i = 0; puzzle[i] != '\0'; i++) {
     if ((i & 7) == 6) {  // Bitwise AND trick
         putchar(puzzle[i]); 
